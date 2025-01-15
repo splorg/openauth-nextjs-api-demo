@@ -1,15 +1,7 @@
 # openauth-nextjs-api-demo
 
-To install dependencies:
+Little demo trying out OpenAuth
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.43. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- Authenticating from a Next.js app
+- Protecting routes in middleware
+- WIP: validating access token in external API from cookies or authorization header
