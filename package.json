@@ -1,0 +1,8 @@
+{
+  "name": "openauth-nextjs-api-demo",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:packages": "bun run --filter './packages/*' dev"
+  }
+}
