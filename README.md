@@ -4,4 +4,4 @@ Little demo trying out [OpenAuth](https://openauth.js.org/) for centralized auth
 
 - Authenticating from a Next.js app
 - Protecting routes in middleware
-- verifying access token in external API from cookies or authorization header
+- Verifying access token in REST API from cookies or authorization header
