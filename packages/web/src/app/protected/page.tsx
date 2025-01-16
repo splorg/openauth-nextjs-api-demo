@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "next-view-transitions"
 import { getUser } from "../../lib/api"
 
 export default async function ProtectedPage() {
@@ -12,12 +12,14 @@ export default async function ProtectedPage() {
       </p>
       <p>User data from protected API:</p>
       <pre>{JSON.stringify(user, null, 2)}</pre>
-      <Link 
-        href="/"
-        className="text-blue-500 hover:text-blue-700 underline"
-      >
-        Back to Home
-      </Link>
+      <div className="mt-4">
+        <Link
+          href="/"
+          className="text-blue-500 hover:text-blue-700 underline"
+        >
+          Back to Home
+        </Link>
+      </div>
     </div>
   )
 } 
