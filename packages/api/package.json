@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openauthjs/openauth": "^0.3.6",
+    "@types/cors": "^2.8.17",
+    "auth": "workspace:*",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "db": "workspace:*",
+    "express": "^4.21.2"
+  }
+}

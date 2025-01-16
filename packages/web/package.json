@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@openauthjs/openauth": "^0.3.6",
+    "auth": "workspace:*",
+    "axios": "^1.7.9",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "auth": "workspace:*"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "typescript": "^5",

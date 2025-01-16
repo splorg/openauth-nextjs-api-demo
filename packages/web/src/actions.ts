@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation"
 import { headers as getHeaders, cookies as getCookies } from "next/headers"
 import { subjects } from "auth/subjects"
-import { client, setTokens } from "./auth"
+import { client, setTokens } from "./lib/auth"
 
 export async function auth() {
   const cookies = await getCookies()

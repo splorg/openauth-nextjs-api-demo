@@ -1,9 +1,12 @@
 import { createClient } from "@openauthjs/openauth/client";
 import { cookies as getCookies } from "next/headers";
 
+const AUTH_URL = process.env.AUTH_URL;
+const APP_DOMAIN = process.env.APP_DOMAIN;
+
 export const client = createClient({
   clientID: "web",
-  issuer: "http://localhost:3001",
+  issuer: AUTH_URL,
 })
 
 export const setTokens = async (access: string, refresh: string) => {
@@ -14,6 +17,7 @@ export const setTokens = async (access: string, refresh: string) => {
     value: access,
     httpOnly: true,
     sameSite: "lax",
+    domain: `.${APP_DOMAIN}`,
     path: "/",
     maxAge: 34560000,
   })
@@ -22,6 +26,7 @@ export const setTokens = async (access: string, refresh: string) => {
     value: refresh,
     httpOnly: true,
     sameSite: "lax",
+    domain: `.${APP_DOMAIN}`,
     path: "/",
     maxAge: 34560000,
   })
