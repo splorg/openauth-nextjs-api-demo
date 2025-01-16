@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
-import { subjects } from "auth/subjects";
+import { subjects } from "subjects";
 import { client } from "./auth";
 
 declare global {

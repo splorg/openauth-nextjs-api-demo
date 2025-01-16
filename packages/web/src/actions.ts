@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation"
 import { headers as getHeaders, cookies as getCookies } from "next/headers"
-import { subjects } from "auth/subjects"
+import { subjects } from "subjects"
 import { client, setTokens } from "./lib/auth"
 
 export async function auth() {

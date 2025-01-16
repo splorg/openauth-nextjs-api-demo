@@ -12,9 +12,10 @@ Little demo trying out [OpenAuth](https://openauth.js.org/) for centralized auth
 bun install
 docker compose up -d
 cd packages/db && cp .env.example .env && bunx prisma migrate dev
-cd ../auth && bun dev
-cd ../web && cp .env.example .env && bun dev
-cd ../api && cp .env.example .env && bun dev
+cd ../auth
+cd ../web && cp .env.example .env
+cd ../api && cp .env.example .env
+cd ../.. && bun dev
 ```
 
 Open browser and go to http://localhost:3000

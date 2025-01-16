@@ -2,9 +2,9 @@ import { issuer } from "@openauthjs/openauth";
 import { CodeUI } from "@openauthjs/openauth/ui/code";
 import { CodeProvider } from "@openauthjs/openauth/provider/code";
 import { MemoryStorage } from "@openauthjs/openauth/storage/memory";
+import { subjects } from "subjects";
 import { PrismaClient } from "db";
 
-import { subjects } from "./subjects";
 
 const db = new PrismaClient()
 
